@@ -4,6 +4,7 @@ document.getElementById("confirmbutton").addEventListener("click", function () {
     if (titre != "" && post != "") {
         document.getElementById("posts").innerHTML += `
         <div class="mypost">
+        <button id="closePost">x</button>
             <div id="postName">${titre}</div>
             <div id="postTexte">${post}</div>
         </div>
@@ -14,8 +15,12 @@ document.getElementById("confirmbutton").addEventListener("click", function () {
 })
 
 document.getElementById("clearbutton").addEventListener("click", function () {
-    let texte = document.getElementById("text").value = ""
-    document.getElementById("display-toto").innerText = ""
+    let texte = document.getElementById("titrePost").value = ""
+    let post = document.getElementById("textPost").value = ""
+})
+
+document.getElementById("closePost").addEventListener("click", function () {
+    document.getElementById("posts").style.visibility = 'hidden'
 })
 
 // Fermer la fenêtre 
