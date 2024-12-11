@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post it</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="desk">
+        <div class="top-barre">
+            <span>mes_notes.txt</span> <button id="exit">x</button>
+        </div>
+        <div class="desk-both">
+            <div class="left-form">
+                <label for="titre">Titre :</label>
+                <input type="text" id="titrePost">
+                <label for="postcontent">Texte :</label>
+                <textarea id="textPost"></textarea>
+                <input type="button" value="Valider" id="confirmbutton">
+                <input type="button" value="Annuler" id="clearbutton">
+            </div>
+            <div class="right-post" id="posts">
+               
+                
+            </div>
+        </div>
+    </section>
+    <div class="mybloc" id="blocnote">
+        <img src="img/bloc.png">
+        <span>Mes_notes</span>
+    </div>
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

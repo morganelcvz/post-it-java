@@ -1,0 +1,150 @@
+body {
+    padding:0px;
+    margin:0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#008080;
+}
+
+.desk {
+    margin-top:2rem;
+    background:#fff;
+    width:70%;
+    border:2px solid grey;
+    box-shadow: 8px 5px 8px #484848;
+}
+
+.desk-both {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    align-items: stretch;
+    border:1.5px solid #ccc;
+}
+
+.top-barre {
+    border-bottom:1px solid grey;
+    background:#c0c0c0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-barre span {
+    font-family: cousine;
+    font-size:11px; 
+    text-transform:uppercase;
+    color:#000;
+    padding:10px;
+}
+
+.top-barre button {
+    background:red;
+    padding:6px 10px;
+    cursor:pointer;
+}
+
+
+/**********FORMULAIRE GAUCHE************/ 
+
+.left-form {
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    padding:20px;
+    border:1px solid #ccc; 
+    background:#dedede;
+}
+
+.left-form label {
+    font-family: cousine;
+    font-size:12px;
+    text-transform: uppercase;
+}
+
+.left-form input {
+    margin:5px;
+    padding:10px;
+}
+
+#confirmbutton {
+    background:#14a85c;
+    font-family: cousine;
+    font-size:12px; 
+    color:#fff;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+#clearbutton {
+    background:red;
+    font-family: cousine;
+    font-size:12px; 
+    color:#fff;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+.left-form textarea {
+    margin:5px;
+    padding:10px;
+}
+
+/**************POST IT***************/
+
+.right-post {
+    width:70%;
+    background:#fdfdfd;
+    padding:10px;
+    height:300px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap:3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mypost {
+    background:#eded7b;
+    padding:10px;
+    border:2px solid #cfa646;
+    width:25%;
+}
+
+#postName {
+    font-family: cousine;
+    font-size:15px;
+    color:#000;
+}
+
+#postTexte {
+    font-family: cousine;
+    font-size:12px;
+    color:#000;
+    margin-top:10px;
+}
+
+/********BLOC NOTE********/ 
+
+.mybloc {
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top:40rem;
+    left:10rem;
+    width:6%;
+    cursor:pointer;
+    text-align:center;
+}
+
+.mybloc img {
+    width:100%;
+}
+
+.mybloc span {
+    font-family: cousine;
+    color:#000;
+    text-transform: uppercase;
+}
