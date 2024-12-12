@@ -4,7 +4,7 @@ document.getElementById("confirmbutton").addEventListener("click", function () {
     if (titre != "" && post != "") {
         document.getElementById("posts").innerHTML += `
         <div class="mypost">
-        <button id="closePost">x</button>
+        <button id="closePost" onclick="supprimer(this)">x</button>
             <div id="postName">${titre}</div>
             <div id="postTexte">${post}</div>
         </div>
@@ -12,15 +12,23 @@ document.getElementById("confirmbutton").addEventListener("click", function () {
         document.getElementById("titrePost").value = ""
         document.getElementById("textPost").value = ""
     }
+   
 })
+
+function supprimer(element) {
+    element.parentElement.remove()
+}
+
+// function supprimer () {
+//     document.getElementById("posts").remove(".mypost");
+// }
+
+
+// Annuler la saisie 
 
 document.getElementById("clearbutton").addEventListener("click", function () {
     let texte = document.getElementById("titrePost").value = ""
     let post = document.getElementById("textPost").value = ""
-})
-
-document.getElementById("closePost").addEventListener("click", function () {
-    document.getElementById("posts").style.visibility = 'hidden'
 })
 
 // Fermer la fenêtre 
