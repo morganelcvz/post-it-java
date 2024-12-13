@@ -104,7 +104,7 @@ body {
     flex-wrap:wrap;
     gap:3rem;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: baseline;
     overflow:auto;
 }
 
@@ -113,6 +113,7 @@ body {
     padding:10px;
     border:2px solid #cfa646;
     width:25%;
+    min-height: 120px;
 }
 
 #postName {
@@ -144,7 +145,7 @@ body {
     display:flex;
     flex-direction: column;
     position:absolute;
-    top:40rem;
+    top:38rem;
     left:10rem;
     width:6%;
     cursor:pointer;
@@ -161,8 +162,94 @@ body {
     text-transform: uppercase;
 }
 
-@media (max-width: 500px) {
+/*********POUBELLE**********/
+
+.poubelle {
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top:38rem;
+    left:20rem;
+    width:6%;
+    cursor:pointer;
+    text-align:center;
+}
+
+.poubelle img {
+    width:100%;
+}
+
+.poubelle span {
+    font-family: cousine;
+    color:#000;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
     .mypost {
         width:60%;
     }
+}
+
+@media (max-width: 500px) {
+    .desk-both {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        align-items: flex-start;
+    }
+
+    .left-form {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        padding:0px;
+        border:1px solid #ccc; 
+        background:#dedede;
+    }
+
+    label {
+        margin:10px;
+    }
+    
+    input {
+        margin:10px;
+
+    }
+
+    .mypost {
+        margin-top:10px;
+    }
+
+    .right-post {
+        width:100%;
+        background:#fdfdfd;
+        padding:0px;
+        height:300px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        gap:3rem;
+        justify-content: center;
+        align-items: flex-start;
+        overflow:auto;
+    }
+
+    .mybloc {
+        top:50rem;
+        left:8rem;
+        width:6%;
+        cursor:pointer;
+        text-align:center;
+    }
+    
+    
+    .poubelle {
+        top:50em;
+        left:20rem;
+        width:6%;
+        cursor:pointer;
+        text-align:center;
+    }
+
 }

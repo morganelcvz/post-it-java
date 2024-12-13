@@ -12,7 +12,7 @@ document.getElementById("confirmbutton").addEventListener("click", function () {
         document.getElementById("titrePost").value = ""
         document.getElementById("textPost").value = ""
     }
-   
+
 })
 
 function supprimer(element) {
@@ -41,10 +41,8 @@ document.getElementById("blocnote").addEventListener("click", function () {
     document.querySelector(".desk").style.visibility = 'visible'
 })
 
-// let text = ["text1", "tex2", "text3", "text4"];
-// text.forEach(function(el) {
-//     var div = document.createElement("div");
-//     div.className = "mypost";
-//     div.innerHTML = el;
-//     document.body.appendChild(div);
-// });
+// Supprimer tous les post it 
+
+document.getElementById("bin").addEventListener("click", function () {
+    document.querySelector("#posts").remove(".mypost");
+})
