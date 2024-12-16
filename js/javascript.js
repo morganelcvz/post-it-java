@@ -44,6 +44,7 @@ document.getElementById("blocnote").addEventListener("click", function () {
 // Supprimer tous les post it 
 
 document.getElementById("bin").addEventListener("click", function () {
-    const posts = document.querySelectorAll("#posts .mypost");
-    posts.forEach(post => post.remove());
+    // let posts = document.querySelectorAll("#posts .mypost");
+    // posts.forEach(post => post.remove());
+    document.querySelector("#posts").innerHTML=""
 });
